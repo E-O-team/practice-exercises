@@ -1,5 +1,7 @@
-#nhap so
+var a
 function inputData(){
-    var a=str.split(" ");
+    a=prompt("hay nhap day so cach nhau boi dau cach");
+    var a=a.split(" ");
     return a;
 }
+a=inputData();
