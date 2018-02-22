@@ -1,15 +1,24 @@
 
+// Input
+
+var a;
+function inputData(){
+    a=prompt("hay nhap day so cach nhau boi dau cach");
+    var a=a.split(" ");
+    return a;
+}
+a=inputData();
+
+
 // Comparing
 
-function max(var a){
-  var max=a[0];
+function max(a){
+  var max=Number(a[0]);
   for (var i=0;i<a.length;i++){
 
     // Convert to Number
 
-    if(isNaN(a[i])){
       a[i]=Number(a[i]);
-    }
 
     // Compare
 
@@ -20,5 +29,7 @@ function max(var a){
 
   // Alert
 
-  alert(`Số lớn nhất là: ${max}`);
+  alert("Số lớn nhất là: " + max);
 }
+
+max(a);
