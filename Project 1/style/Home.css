@@ -1,0 +1,101 @@
+* {
+  font-family: "Proxima Nova",Arial,sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+body{
+background-color: rgb(195,137,74);
+}
+header {
+  background-color: rgb(243,153,101);
+  border-bottom: 2px solid orange;
+}
+#logo {
+  float: left;
+  height: 82px;
+  width: 80px;;
+  margin-top: 1%;
+  margin-left: 2%;
+}
+.navBar, .navBar li {
+  display: inline-block;
+}
+.navBar {
+  width: 45%;
+  margin-left: 1%;
+}
+.navBar a {
+  font-size: 1.25em;
+  font-weight: 500;
+  text-decoration: none;
+  color: #312c2c;
+}
+.navBar li {
+  padding:40px;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+.login {
+  text-align: center;
+  display: inline-block;
+  color: #312c2c;
+  width: 40%;
+  float: right;
+  margin-top: 2%;
+  margin-right: 2%;
+}
+.subLogin {
+  text-align: left;
+  display: inline-block;
+  margin-left: 2%;
+}
+.login button {
+  margin-left: 4px;
+}
+.introBox {
+  float: right;
+  height: inherit;
+  width: 44%;
+  margin-right: 3%;
+}
+.introBox .tit {
+  text-align: center;
+  padding: 3%;
+  background-color: #312c2c;
+  color: rgb(195,137,74);
+  font-size: 4em;
+  margin-bottom: 7px;
+}
+.introBox .content {
+  text-align: center;
+  padding: 1%;
+  color: #312c2c;
+  background-color: rgb(235,210,188);
+  font-size: 1.5em;
+}
+footer {
+  color: #312c2c;
+  position: absolute;
+  bottom: 0;
+  border-top: 2px solid orange;
+  height: 65px;
+  width: 100%;
+  background-color: rgb(243,153,101);
+}
+address {
+  position: absolute;
+  margin: 1% 0 0 1%;
+}
+footer img {
+  position: absolute;
+  right: 1%;
+  bottom: 30%;
+}
+@media (max-width:1186px) {
+  .navBar {
+    width: 80%;
+  }
+  .login {
+    display: none;
+  }
+}
