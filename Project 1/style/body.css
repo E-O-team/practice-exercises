@@ -1,0 +1,29 @@
+/* Body */
+
+body{
+  background-color: rgb(195,137,74);
+}
+
+/* Introduction Part */
+
+.introBox {
+  float: right;
+  height: inherit;
+  width: 44%;
+  margin-right: 3%;
+}
+.introBox .tit {
+  text-align: center;
+  padding: 3%;
+  background-color: #312c2c;
+  color: rgb(195,137,74);
+  font-size: 4em;
+  margin-bottom: 7px;
+}
+.introBox .content {
+  text-align: center;
+  padding: 1%;
+  color: #312c2c;
+  background-color: rgb(235,210,188);
+  font-size: 1.5em;
+}
