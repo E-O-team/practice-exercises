@@ -10,7 +10,7 @@
 /* Header */
 
 header {
-  background-color: rgb(243,153,101);
+  background-color: rgb(245,212,159);
   border-bottom: 2px solid orange;
 }
 #logo {
@@ -39,6 +39,9 @@ header {
   padding:40px;
   padding-left: 3%;
   padding-right: 3%;
+}
+.navBar li:hover {
+  background-color: rgb(212,169,114);
 }
 
 /* Login */
