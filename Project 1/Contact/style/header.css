@@ -61,4 +61,9 @@ header {
 }
 .login button {
   margin-left: 4px;
+  color: rgb(245,212,159);
+  background-color: #312c2c;
+  border-radius: 3px;
+  border: 1px solid rgb(212,169,114);
+  padding: 3px;
 }

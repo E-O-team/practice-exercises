@@ -38,33 +38,36 @@
 <!-- Body -->
 
   <div id="bodyPage">
+    <img class="bodyBg" src="style\images\house.png" />
     <div class="contactBox">
-      <strong>MỌI THẮC MẮC XIN LIÊN HỆ VỚI CHÚNG TÔI</strong><br />
+      <strong>MỌI THẮC MẮC XIN VUI LÒNG LIÊN HỆ VỚI CHÚNG TÔI</strong><br />
       <form class="commentBox">
-        <div class="subCB" style="margin-bottom:6.5%">
-          <label for="mail">Email của bạn:</label><br />
-          <input type="email" id="mail" placeholder="Nhập email của bạn tại đây..." autofocus/>
+        <div class="leftSide">
+        <div class="subCB">
+          <label for="fullName">Họ và tên:</label><br />
+          <input type="text" id="fullName" placeholder="Nhập họ và tên của bạn..." />
         </div>
         <div class="subCB">
-          <label for="comment">Phản hồi của bạn:</label><br />
-          <textarea id="comment" placeholder="Nhập phản hồi của bạn tại đây..."></textarea>
+          <label for="mail">Email:<span class="red">*</span></label><br />
+          <input type="email" id="mail" placeholder="Nhập email của bạn..." required autofocus/>
+        </div>
+        <div class="subCB">
+          <label for="phone">Số điện thoại:</label><br />
+          <input type="tel" id="phone" placeholder="Nhập số điện thoại của bạn..." />
+        </div>
+        </div>
+        <div class="rightSide">
+        <div class="subCB" style="margin-bottom:6.5%">
+          <label for="titlecnt">Tiêu đề:</label><br />
+          <input type="text" id="titlecnt" placeholder="Nhập tiêu đề phản hồi của bạn..." />
+        </div>
+        <div class="subCB">
+          <label for="comment">Phản hồi:<span class="red">*</span></label><br />
+          <textarea id="comment" placeholder="Nhập phản hồi của bạn..." required></textarea>
         </div>
         <input type="submit" value="Gửi phản hồi" />
+        </div>
       </form>
-    </div>
-    <div class="contactContent">
-      <h2><strong>Đội ngũ phát triển Web</strong></h2>
-      <p>
-        <strong>Designer:</strong> Nguyễn Lê Anh Quân
-        <br />
-        <strong>Front-end Developer:</strong> Bùi Kim Phát, Phạm Quang Mẫn
-        <br />
-        <strong>Back-end Developer:</strong> Phạm Quang Mẫn
-        <br />
-        <strong>Cùng với sự trợ giúp của:</strong> Lê Hồng Minh
-        <br />
-        Mọi chi tiết xin vui lòng liên hệ <a href="mailto:quangman1404@gmail.com">qua email: <strong>quangman1404@gmail.com</strong></a>
-      </p>
     </div>
   </div>
 
