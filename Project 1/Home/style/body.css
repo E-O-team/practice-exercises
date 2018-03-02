@@ -1,7 +1,15 @@
 /* Body */
 
 body{
-  background-color: rgb(195,137,74);
+  background-color: rgb(212,169,114);
+}
+.homeDrum {
+  position: absolute;
+  margin-top: -19px;
+  height: 82%;
+  left: -100px;
+  opacity: 0.6;
+  z-index: -1;
 }
 
 /* Introduction Part */
@@ -9,7 +17,7 @@ body{
 .introBox {
   float: right;
   height: inherit;
-  width: 44%;
+  width: 40%;
   margin-right: 3%;
 }
 .introBox .tit {
