@@ -1,2 +1,2 @@
 # practice-exercises
-Cái này dùng để làm bài tập thử
+Bài tập EO
