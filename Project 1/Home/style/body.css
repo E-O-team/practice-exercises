@@ -6,8 +6,8 @@ body{
 .homeDrum {
   position: absolute;
   margin-top: -19px;
-  height: 82%;
-  left: -100px;
+  height: 83.5%;
+  left: -140px;
   opacity: 0.6;
   z-index: -1;
 }
@@ -17,7 +17,7 @@ body{
 .introBox {
   float: right;
   height: inherit;
-  width: 40%;
+  width: 38%;
   margin-right: 3%;
 }
 .introBox .tit {
