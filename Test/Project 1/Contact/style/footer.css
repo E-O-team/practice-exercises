@@ -1,0 +1,38 @@
+/* Footer */
+
+footer {
+  color: #312c2c;
+  position: fixed;
+  bottom: 0;
+  border-top: 2px solid orange;
+  height: 65px;
+  width: 100%;
+  background-color: rgb(245,212,159);
+}
+
+/* Left Addresses */
+address {
+  position: absolute;
+  margin: 1% 0 0 1%;
+}
+address a {
+  text-decoration: none;
+  color: #312c2c;
+}
+
+/* Right Linking Buttons */
+footer img {
+  position: absolute;
+  right: 1%;
+  bottom: 30%;
+}
+
+/* Responsive */
+@media (max-width:1186px) {
+  .navBar {
+    width: 80%;
+  }
+  .login {
+    display: none;
+  }
+}
