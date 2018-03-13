@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8" name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>Liên Hệ - Gia phả tộc Phạm</title>
+  <link rel="stylesheet" type="text/css" href="style\header.css" />
+  <link rel="stylesheet" type="text/css" href="style\body.css" />
+  <link rel="stylesheet" type="text/css" href="style\footer.css" />
+</head>
+<body>
+
+    <!-- Header -->
+
+    <header>
+    <a href="..\Home\Home.html"><img id="logo" src="" title="Gia phả tộc Phạm" alt="Logo Website" /></a>
+    <ul class="navBar">
+      <li><a href="..\Home\Home.html">TRANG CHỦ</a></li>
+      <li><a href="#">PHẢ ĐỒ</a></li>
+      <li><a href="#">TIN TỨC</a></li>
+      <li><a href="Contact.html">LIÊN HỆ</a></li>
+    </ul>
+    <form class="login">
+      <div class="subLogin">
+      <label for="nickname">Tài khoản</label>
+      </br>
+      <input type="text" id="nickname" />
+      </div>
+      <div class="subLogin">
+      <label for="pass">Mật khẩu</label>
+      </br>
+      <input type="password" id="pass" />
+      </div>
+      <button>Đăng nhập</button>
+    </form>
+
+  </header>
+
+<!-- Body -->
+
+  <div id="bodyPage">
+    <img class="bodyBg" src="style\images\house.png" />
+    <div class="contactBox">
+      <strong>MỌI THẮC MẮC XIN VUI LÒNG LIÊN HỆ VỚI CHÚNG TÔI</strong><br />
+      <form class="commentBox">
+        <div class="leftSide">
+        <div class="subCB">
+          <label for="fullName">Họ và tên:</label><br />
+          <input type="text" id="fullName" placeholder="Nhập họ và tên của bạn..." />
+        </div>
+        <div class="subCB">
+          <label for="mail">Email:<span class="red">*</span></label><br />
+          <input type="email" id="mail" placeholder="Nhập email của bạn..." required autofocus/>
+        </div>
+        <div class="subCB">
+          <label for="phone">Số điện thoại:</label><br />
+          <input type="tel" id="phone" placeholder="Nhập số điện thoại của bạn..." />
+        </div>
+        </div>
+        <div class="rightSide">
+        <div class="subCB">
+          <label for="titlecnt">Tiêu đề:</label><br />
+          <input type="text" id="titlecnt" placeholder="Nhập tiêu đề phản hồi của bạn..." />
+        </div>
+        <div class="subCB" style="margin-bottom:0">
+          <label for="comment">Phản hồi:<span class="red">*</span></label><br />
+          <textarea id="comment" placeholder="Nhập phản hồi của bạn..." required></textarea>
+        </div>
+        <input type="submit" value="Gửi phản hồi" />
+        </div>
+      </form>
+    </div>
+  </div>
+
+<!-- footer -->
+
+  <footer>
+    <address>
+    <p>
+      Made By E.O TEAM
+    </p>
+    <a href="mailto:quangman1404@gmail.com"><strong>Email: </strong>quangman1404@gmail.com</a>
+    </address>
+    <img src="style\images\contact.jpg" usemap="#eachContact" />
+    <map name="eachContact">
+      <area shape="rect" coords="0,0,34,37" href="https://www.facebook.com/" />
+      <area shape="rect" coords="37,0,74,37" href="mailto:quangman1404@gmail.com"  />
+      <area shape="rect" coords="78,0,115,37" href="https://twitter.com/?lang=vi"  />
+    </map>
+  </footer>
+</body>
+</html>
