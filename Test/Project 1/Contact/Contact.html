@@ -14,35 +14,39 @@
 </head>
 <body>
 
-    <!-- Header -->
+  <!-- Header -->
 
-    <header>
-    <a href="..\Home\Home.html"><img id="logo" src="" title="Gia phả tộc Phạm" alt="Logo Website" /></a>
-    <ul class="navBar">
-      <li><a href="..\Home\Home.html">TRANG CHỦ</a></li>
-      <li><a href="#">PHẢ ĐỒ</a></li>
-      <li><a href="#">TIN TỨC</a></li>
-      <li><a href="Contact.html">LIÊN HỆ</a></li>
-    </ul>
-    <form class="login">
-      <div class="subLogin">
-      <label for="nickname">Tài khoản</label>
-      </br>
-      <input type="text" id="nickname" />
-      </div>
-      <div class="subLogin">
-      <label for="pass">Mật khẩu</label>
-      </br>
-      <input type="password" id="pass" />
-      </div>
-      <button>Đăng nhập</button>
-    </form>
-
-  </header>
+<nav class="navbar navbar-expand-sm">
+  <a id="logo" class="nav-brand" href="..\Home\Home.html"><img class="GPTP" src="" title="Gia phả tộc Phạm" alt="Logo Website"/></a>
+  <div class="collapse navbar-collapse" id="menucolps">
+  <ul class="navbar-nav">
+    <li class="nav-item"><a class="nav-link" href="..\Home\Home.html">TRANG CHỦ</a></li>
+    <li class="nav-item"><a class="nav-link" href="#">PHẢ ĐỒ</a></li>
+    <li class="nav-item"><a class="nav-link" href="#">TIN TỨC</a></li>
+    <li class="nav-item"><a class="nav-link" href="..\Contact\Contact.html">LIÊN HỆ</a></li>
+  </ul>
+  </div>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menucolps">
+    <span class="navbar-toggler-icon">&#9776;</span>
+  </button>
+  <form class="login">
+    <div class="subLogin">
+    <label for="nickname">Tài khoản</label>
+    </br>
+    <input type="text" id="nickname" />
+    </div>
+    <div class="subLogin">
+    <label for="pass">Mật khẩu</label>
+    </br>
+    <input type="password" id="pass" />
+    </div>
+    <button class="btn btn-dark">Đăng nhập</button>
+  </form>
+</nav>
 
 <!-- Body -->
 
-  <div id="bodyPage">
+  <div class="container-fluid" id="bodyPage">
     <img class="bodyBg" src="style\images\house.png" />
     <div class="contactBox">
       <strong>MỌI THẮC MẮC XIN VUI LÒNG LIÊN HỆ VỚI CHÚNG TÔI</strong><br />
@@ -70,7 +74,7 @@
           <label for="comment">Phản hồi:<span class="red">*</span></label><br />
           <textarea id="comment" placeholder="Nhập phản hồi của bạn..." required></textarea>
         </div>
-        <input type="submit" value="Gửi phản hồi" />
+        <input class="btn btn-dark" type="submit" value="Gửi phản hồi" />
         </div>
       </form>
     </div>
@@ -78,19 +82,20 @@
 
 <!-- footer -->
 
-  <footer>
-    <address>
-    <p>
+<footer class="container-fluid">
+  <address>
+    <em>
       Made By E.O TEAM
-    </p>
+    </em>
+    <br  />
     <a href="mailto:quangman1404@gmail.com"><strong>Email: </strong>quangman1404@gmail.com</a>
-    </address>
-    <img src="style\images\contact.jpg" usemap="#eachContact" />
-    <map name="eachContact">
-      <area shape="rect" coords="0,0,34,37" href="https://www.facebook.com/" />
-      <area shape="rect" coords="37,0,74,37" href="mailto:quangman1404@gmail.com"  />
-      <area shape="rect" coords="78,0,115,37" href="https://twitter.com/?lang=vi"  />
-    </map>
-  </footer>
+  </address>
+  <img src="style\images\contact.jpg" usemap="#eachContact" />
+  <map name="eachContact">
+    <area shape="rect" coords="0,0,34,37" href="https://www.facebook.com/" />
+    <area shape="rect" coords="37,0,74,37" href="mailto:quangman1404@gmail.com"  />
+    <area shape="rect" coords="78,0,115,37" href="https://twitter.com/?lang=vi"  />
+  </map>
+</footer>
 </body>
 </html>

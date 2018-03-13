@@ -71,10 +71,10 @@ nav {
   padding: 3px;
 }
 .navbar-toggler {
-  background-color: black;
+  background-color: #312c2c;
   margin-right: 2%;
-  color: white;
-  padding: 10px 5px 5px 5px;
+  color: rgb(245,212,159);
+  padding: 10px 10px 5px 10px;
 }
 /* Responsive */
 @media (max-width:575px) {

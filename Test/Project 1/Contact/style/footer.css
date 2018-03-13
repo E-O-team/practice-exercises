@@ -1,11 +1,13 @@
-/* Footer */
+/* footer */
 
 footer {
+  position: absolute;
   color: #312c2c;
-  position: fixed;
   bottom: 0;
+  left: 0;
+  right: 0;
   border-top: 2px solid orange;
-  height: 65px;
+  min-height: 65px;
   width: 100%;
   background-color: rgb(245,212,159);
 }
@@ -13,26 +15,42 @@ footer {
 /* Left Addresses */
 address {
   position: absolute;
-  margin: 1% 0 0 1%;
+  line-height: 1.2em;
+  margin-top: 12px;
+  margin-left: 10px;
+  margin-bottom: 0;
 }
 address a {
   text-decoration: none;
   color: #312c2c;
 }
-
-/* Right Linking Buttons */
-footer img {
-  position: absolute;
-  right: 1%;
-  bottom: 30%;
+address a:hover {
+  text-decoration: none;
+  color: #312c2c;
 }
 
+/* Right Linking Buttons */
+
+footer img {
+float: right;
+margin-top: 1em;
+margin-right: 1em;
+}
 /* Responsive */
 @media (max-width:1186px) {
-  .navBar {
+  .navbar-nav {
     width: 80%;
   }
   .login {
     display: none;
+  }
+}
+@media (max-width:530px) {
+  footer img {
+    display: none;
+  }
+  footer {
+    position: static;
+    clear: both;
   }
 }
