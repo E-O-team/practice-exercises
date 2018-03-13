@@ -1,11 +1,7 @@
 /* footer */
 
 footer {
-  position: absolute;
   color: #312c2c;
-  bottom: 0;
-  left: 0;
-  right: 0;
   border-top: 2px solid orange;
   min-height: 65px;
   width: 100%;

@@ -1,0 +1,21 @@
+/* Body */
+body{
+  background-color: rgb(212,169,114);
+  color: #312c2c;
+}
+.bodyBg {
+  position: absolute;
+  left: 0;
+  z-index: -1;
+  opacity: 0.21;
+  height: 77.8%;
+  max-width: 98.5%;
+  min-height: 590px;
+}
+
+/* Responsive */
+@media (max-width:500px) {
+  .bodyBg {
+  display: none;
+  }
+}

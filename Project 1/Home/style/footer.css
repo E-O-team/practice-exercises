@@ -38,9 +38,6 @@ margin-right: 1em;
 }
 /* Responsive */
 @media (max-width:1186px) {
-  .navbar-nav {
-    width: 80%;
-  }
   .login {
     display: none;
   }
