@@ -5,12 +5,47 @@ body{
 }
 .bodyBg {
   position: absolute;
-  left: 0;
+  width: 170%;
   z-index: -1;
-  opacity: 0.21;
-  height: 77.8%;
-  max-width: 98.5%;
-  min-height: 590px;
+  opacity: 0.5;
+  bottom: -4.2%;
+  left: -55%;
+}
+#bodyPage {
+  min-height: 591px;
+}
+#left {
+  height: 100%;
+  float : left;
+  margin-left: 1.5%;
+  margin-top: 3%;
+  width: 60%;
+  padding: 3%;
+  background-color: rgba(217,203,190,0.68);
+  border-radius: 13px;
+}
+#right {
+  height: 100%;
+
+  float: right;
+  margin-top: 3%;
+  width: 33%;
+  padding: 3%;
+  background-color: rgba(217,203,190,0.68);
+  border-radius: 13px;
+}
+.news {
+  height: 150px;
+  padding-bottom: 3%;
+}
+.news img {
+  height: 100%;
+  float: left;
+}
+.newsContent {
+  padding-left: 3%;
+  height: 100%;
+  overflow: hidden;
 }
 
 /* Responsive */
