@@ -80,3 +80,11 @@ body{
   display: none;
   }
 }
+@media (max-width:1060px) {
+  #right {
+    display: none;
+  }
+  #left {
+    width: 97.5%;
+  }
+}
