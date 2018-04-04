@@ -1,0 +1,65 @@
+/* footer */
+html {
+  position: relative;
+}
+body {
+  padding-bottom: 65px;
+}
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  display: block;
+  color: #312c2c;
+  border-top: 2px solid orange;
+  min-height: 65px;
+  width: 100%;
+  background-color: rgb(245,212,159);
+}
+
+/* Left Addresses */
+address {
+  position: absolute;
+  line-height: 1.2em;
+  margin-top: 12px;
+  margin-left: 10px;
+  margin-bottom: 0;
+}
+address a {
+  text-decoration: none;
+  color: #312c2c;
+}
+address a:hover {
+  text-decoration: none;
+  color: #312c2c;
+}
+
+/* Right Linking Buttons */
+
+footer img {
+  float: right;
+  margin-top: 1em;
+  margin-right: 1em;
+}
+/* Responsive */
+@media (max-width:1186px) {
+  .login {
+    display: none;
+  }
+}
+@media (max-width:530px) {
+  footer img {
+    display: none;
+  }
+  footer {
+    position: static;
+    clear: both;
+  }
+}
+@media (min-width:1010px) and (min-height:1000px) {
+  html {
+    height: 100%;
+  }
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="handlebars-v4.0.11.js"></script>
+  <title>Tin tức - Gia phả tộc Phạm</title>
+  <link rel="stylesheet" type="text/css" href="style\header.css" />
+  <link rel="stylesheet" type="text/css" href="style\body.css" />
+  <link rel="stylesheet" type="text/css" href="style\footer.css" />
+</head>
+<body>
+
+  <!-- Header -->
+
+<nav class="navbar navbar-expand-sm">
+  <a id="logo" class="nav-brand" href="..\Home\Home.html"><img class="GPTP" src="" title="Gia phả tộc Phạm" alt="Logo Website"/></a>
+  <div class="collapse navbar-collapse" id="menucolps">
+  <ul class="navbar-nav">
+    <li class="nav-item"><a class="nav-link" href="..\Home\Home.html">TRANG CHỦ</a></li>
+    <li class="nav-item"><a class="nav-link" href="#">PHẢ ĐỒ</a></li>
+    <li class="nav-item"><a class="nav-link" href="News.html">TIN TỨC</a></li>
+    <li class="nav-item"><a class="nav-link" href="..\Contact\Contact.html">LIÊN HỆ</a></li>
+  </ul>
+  </div>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menucolps">
+    <span class="navbar-toggler-icon">&#9776;</span>
+  </button>
+  <form class="login">
+    <div class="subLogin">
+    <label for="nickname">Tài khoản</label>
+    </br>
+    <input type="text" id="nickname" />
+    </div>
+    <div class="subLogin">
+    <label for="pass">Mật khẩu</label>
+    </br>
+    <input type="password" id="pass" />
+    </div>
+    <button class="btn btn-dark">Đăng nhập</button>
+  </form>
+</nav>
+
+<!-- Body -->
+
+<div class="container-fluid" id="bodyPage">
+  <div class="bgWrap">
+  <img class="bodyBg" src="style\images\bg.png"  />
+  </div>
+</div>
+<script id="news-template" type="text/x-handlebars-template">
+  <div class="container" id="left" >
+    {{#each leftNews}}
+    <div class="news">
+      <img src="{{{picSource}}}" alt="{{alter}}">
+      <div class="newsContent">
+        <a href="#"><h4>{{title}}</h4></a>
+        <p>
+          {{parag}}
+        </p>
+      </div>
+    </div>
+    {{/each}}
+  </div>
+  <div class="container" id="right" >
+    {{#each rightNews}}
+    <div class="news">
+      <img src="{{{picSource}}}" alt="{{alter}}">
+      <div class="newsContent">
+        <a href="#"><h4>{{title}}</h4></a>
+        <p>
+          {{parag}}
+        </p>
+      </div>
+    </div>
+    {{/each}}
+  </div>
+</script>
+<script src="news.js"></script>
+<!-- footer -->
+
+<footer class="footer">
+  <div class="container">
+  <address>
+    <em>
+      Made By E.O TEAM
+    </em>
+    <br  />
+    <a href="mailto:quangman1404@gmail.com"><strong>Email: </strong>quangman1404@gmail.com</a>
+  </address>
+  <img src="style\images\contact.jpg" usemap="#eachContact" />
+  <map name="eachContact">
+    <area shape="rect" coords="0,0,34,37" href="https://www.facebook.com/" />
+    <area shape="rect" coords="37,0,74,37" href="mailto:quangman1404@gmail.com"  />
+    <area shape="rect" coords="78,0,115,37" href="https://twitter.com/?lang=vi"  />
+  </map>
+  </div>
+</footer>
+</body>
+</html>
