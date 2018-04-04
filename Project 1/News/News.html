@@ -7,6 +7,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="handlebars-v4.0.11.js"></script>
   <title>Tin tức - Gia phả tộc Phạm</title>
   <link rel="stylesheet" type="text/css" href="style\header.css" />
   <link rel="stylesheet" type="text/css" href="style\body.css" />
@@ -50,131 +51,36 @@
   <div class="bgWrap">
   <img class="bodyBg" src="style\images\bg.png"  />
   </div>
+</div>
+<script id="news-template" type="text/x-handlebars-template">
   <div class="container" id="left" >
+    {{#each leftNews}}
     <div class="news">
-      <img src="style\images\dab.jpg" alt="Dab news">
+      <img src="{{{picSource}}}" alt="{{alter}}">
       <div class="newsContent">
-        <a href="#"><h4>Quân đội nhân dân Việt Nam</h4></a>
+        <a href="#"><h4>{{title}}</h4></a>
         <p>
-          Ngày hôm qua quân đội đi tập trận thật vui, ông gì đó đã bắn
-          súng và không may bị trúng đạn rồi nhập viện.
-          Thật may người ta đã chữa trị kịp thời cho ổng, ổng đã mắc căn bệnh ung thư,
-          bệnh bại liệt và mất trí cùng lúc với sốt xuất huyết. Ông đã có nhiều đóng góp cho
-          lĩnh vực quân sự việt nam, là một chỉ huy tài ba với khả năng quân sự ddinkout không ai bằng, ông đã dễ dàng
-          quét tan quân địch.
-          Ngày hôm qua quân đội đi tập trận thật vui, ông gì đó đã bắn
-          súng và không may bị trúng đạn rồi nhập viện.
-          Thật may người ta đã chữa trị kịp thời cho ổng, ổng đã mắc căn bệnh ung thư,
-          bệnh bại liệt và mất trí cùng lúc với sốt xuất huyết. Ông đã có nhiều đóng góp cho
-          lĩnh vực quân sự việt nam, là một chỉ huy tài ba với khả năng quân sự ddinkout không ai bằng, ông đã dễ dàng
-          quét tan quân địch.
+          {{parag}}
         </p>
       </div>
     </div>
-    <div class="news">
-      <img src="style\images\dab.jpg" alt="Dab news">
-      <div class="newsContent">
-        <a href="#"><h4>Quân đội nhân dân Việt Nam</h4></a>
-        <p>
-          Ngày hôm qua quân đội đi tập trận thật vui, ông gì đó đã bắn
-          súng và không may bị trúng đạn rồi nhập viện.
-          Thật may người ta đã chữa trị kịp thời cho ổng, ổng đã mắc căn bệnh ung thư,
-          bệnh bại liệt và mất trí cùng lúc với sốt xuất huyết. Ông đã có nhiều đóng góp cho
-          lĩnh vực quân sự việt nam, là một chỉ huy tài ba với khả năng quân sự ddinkout không ai bằng, ông đã dễ dàng
-          quét tan quân địch.
-          Ngày hôm qua quân đội đi tập trận thật vui, ông gì đó đã bắn
-          súng và không may bị trúng đạn rồi nhập viện.
-          Thật may người ta đã chữa trị kịp thời cho ổng, ổng đã mắc căn bệnh ung thư,
-          bệnh bại liệt và mất trí cùng lúc với sốt xuất huyết. Ông đã có nhiều đóng góp cho
-          lĩnh vực quân sự việt nam, là một chỉ huy tài ba với khả năng quân sự ddinkout không ai bằng, ông đã dễ dàng
-          quét tan quân địch.
-        </p>
-      </div>
-    </div>
-    <div class="news">
-      <img src="style\images\dab.jpg" alt="Dab news">
-      <div class="newsContent">
-        <a href="#"><h4>Quân đội nhân dân Việt Nam</h4></a>
-        <p>
-          Ngày hôm qua quân đội đi tập trận thật vui, ông gì đó đã bắn
-          súng và không may bị trúng đạn rồi nhập viện.
-          Thật may người ta đã chữa trị kịp thời cho ổng, ổng đã mắc căn bệnh ung thư,
-          bệnh bại liệt và mất trí cùng lúc với sốt xuất huyết. Ông đã có nhiều đóng góp cho
-          lĩnh vực quân sự việt nam, là một chỉ huy tài ba với khả năng quân sự ddinkout không ai bằng, ông đã dễ dàng
-          quét tan quân địch.
-          Ngày hôm qua quân đội đi tập trận thật vui, ông gì đó đã bắn
-          súng và không may bị trúng đạn rồi nhập viện.
-          Thật may người ta đã chữa trị kịp thời cho ổng, ổng đã mắc căn bệnh ung thư,
-          bệnh bại liệt và mất trí cùng lúc với sốt xuất huyết. Ông đã có nhiều đóng góp cho
-          lĩnh vực quân sự việt nam, là một chỉ huy tài ba với khả năng quân sự ddinkout không ai bằng, ông đã dễ dàng
-          quét tan quân địch.
-        </p>
-      </div>
-    </div>
-    <div class="news">
-      <img src="style\images\dab.jpg" alt="Dab news">
-      <div class="newsContent">
-        <a href="#"><h4>Quân đội nhân dân Việt Nam</h4></a>
-        <p>
-          Ngày hôm qua quân đội đi tập trận thật vui, ông gì đó đã bắn
-          súng và không may bị trúng đạn rồi nhập viện.
-          Thật may người ta đã chữa trị kịp thời cho ổng, ổng đã mắc căn bệnh ung thư,
-          bệnh bại liệt và mất trí cùng lúc với sốt xuất huyết. Ông đã có nhiều đóng góp cho
-          lĩnh vực quân sự việt nam, là một chỉ huy tài ba với khả năng quân sự ddinkout không ai bằng, ông đã dễ dàng
-          quét tan quân địch.
-          Ngày hôm qua quân đội đi tập trận thật vui, ông gì đó đã bắn
-          súng và không may bị trúng đạn rồi nhập viện.
-          Thật may người ta đã chữa trị kịp thời cho ổng, ổng đã mắc căn bệnh ung thư,
-          bệnh bại liệt và mất trí cùng lúc với sốt xuất huyết. Ông đã có nhiều đóng góp cho
-          lĩnh vực quân sự việt nam, là một chỉ huy tài ba với khả năng quân sự ddinkout không ai bằng, ông đã dễ dàng
-          quét tan quân địch.
-        </p>
-      </div>
-    </div>
-    <div class="news">
-      <img src="style\images\dab.jpg" alt="Dab news">
-      <div class="newsContent">
-        <a href="#"><h4>Quân đội nhân dân Việt Nam</h4></a>
-        <p>
-          Ngày hôm qua quân đội đi tập trận thật vui, ông gì đó đã bắn
-          súng và không may bị trúng đạn rồi nhập viện.
-          Thật may người ta đã chữa trị kịp thời cho ổng, ổng đã mắc căn bệnh ung thư,
-          bệnh bại liệt và mất trí cùng lúc với sốt xuất huyết. Ông đã có nhiều đóng góp cho
-          lĩnh vực quân sự việt nam, là một chỉ huy tài ba với khả năng quân sự ddinkout không ai bằng, ông đã dễ dàng
-          quét tan quân địch.
-          Ngày hôm qua quân đội đi tập trận thật vui, ông gì đó đã bắn
-          súng và không may bị trúng đạn rồi nhập viện.
-          Thật may người ta đã chữa trị kịp thời cho ổng, ổng đã mắc căn bệnh ung thư,
-          bệnh bại liệt và mất trí cùng lúc với sốt xuất huyết. Ông đã có nhiều đóng góp cho
-          lĩnh vực quân sự việt nam, là một chỉ huy tài ba với khả năng quân sự ddinkout không ai bằng, ông đã dễ dàng
-          quét tan quân địch.
-        </p>
-      </div>
-    </div>
+    {{/each}}
   </div>
   <div class="container" id="right" >
+    {{#each rightNews}}
     <div class="news">
-      <img src="style\images\dab.jpg" alt="Dab news">
+      <img src="{{{picSource}}}" alt="{{alter}}">
       <div class="newsContent">
-        <a href="#"><h4>Quân đội nhân dân Việt Nam</h4></a>
+        <a href="#"><h4>{{title}}</h4></a>
         <p>
-          Ngày hôm qua quân đội đi tập trận thật vui, ông gì đó đã bắn
-          súng và không may bị trúng đạn rồi nhập viện.
-          Thật may người ta đã chữa trị kịp thời cho ổng, ổng đã mắc căn bệnh ung thư,
-          bệnh bại liệt và mất trí cùng lúc với sốt xuất huyết. Ông đã có nhiều đóng góp cho
-          lĩnh vực quân sự việt nam, là một chỉ huy tài ba với khả năng quân sự ddinkout không ai bằng, ông đã dễ dàng
-          quét tan quân địch.
-          Ngày hôm qua quân đội đi tập trận thật vui, ông gì đó đã bắn
-          súng và không may bị trúng đạn rồi nhập viện.
-          Thật may người ta đã chữa trị kịp thời cho ổng, ổng đã mắc căn bệnh ung thư,
-          bệnh bại liệt và mất trí cùng lúc với sốt xuất huyết. Ông đã có nhiều đóng góp cho
-          lĩnh vực quân sự việt nam, là một chỉ huy tài ba với khả năng quân sự ddinkout không ai bằng, ông đã dễ dàng
-          quét tan quân địch.
+          {{parag}}
         </p>
       </div>
     </div>
+    {{/each}}
   </div>
-</div>
+</script>
+<script src="news.js"></script>
 <!-- footer -->
 
 <footer class="footer">

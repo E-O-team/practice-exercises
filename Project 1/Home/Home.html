@@ -7,6 +7,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="handlebars-v4.0.11.js"></script>
   <title>Trang chủ - Gia phả tộc Phạm</title>
   <link rel="stylesheet" type="text/css" href="style\header.css" />
   <link rel="stylesheet" type="text/css" href="style\body.css" />
@@ -48,12 +49,14 @@
 
   <div class="container-fluid" id="bodyPage">
     <img class="homeDrum" src="style\images\homeDrum.png" />
-    <div class="introBox">
-      <p class="tit">GIỚI THIỆU</p>
-      <p class="content">HỠI ĐỒNG BÀO CẢ NƯỚC, </br></br> TẤT CẢ MỌI NGƯỜI ĐỀU SINH RA CÓ QUYỀN BÌNH ĐẲNG.
-      TẠO HÓA CHO HỌ NHỮNG QUYỀN</p>
-    </div>
   </div>
+  <script id="intro-template" type="text/x-handlebars-template">
+    <div class="introBox">
+      <p class="tit">{{title}}</p>
+      <p class="content">{{intro}}</p>
+    </div>
+  </script>
+  <script src="intro.js"></script>
 
 <!-- footer -->
 
